@@ -1,0 +1,76 @@
+#home {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 150px 0;
+    text-align: center;
+    display: flex;
+    justify-content: left; /* Horizontal center */
+    align-items: center; /* Vertical center */
+    min-height: 100vh; /* Make the section at least the height of the viewport */
+    margin-left: 10px;
+    
+  }
+
+
+
+  #home h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  #home p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  #home .btn {
+    font-size: 18px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+
+
+
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar is above other elements */
+  }
+  /* Custom CSS for the staff details section */
+  #staff {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+  }
+
+  .staff-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .staff-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  /* Set a specific height for the staff name and description to maintain consistent card heights */
+  .staff-card h3 {
+    min-height: 50px;
+  }
+
+ 
