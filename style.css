@@ -1,3 +1,6 @@
+*{
+  margin: 0;
+}
 #home {
     background-image: url('background.jpg');
     background-size: cover;
@@ -9,8 +12,8 @@
     justify-content: left; /* Horizontal center */
     align-items: center; /* Vertical center */
     min-height: 100vh; /* Make the section at least the height of the viewport */
-    margin-left: 10px;
-    
+    margin-left: 0px;
+    height: 70vh;
   }
 
   #home p {
@@ -37,8 +40,9 @@
   }
   @media (max-width: 767px) {
     /* Apply the font size adjustment for mobile devices */
-    #typing-effect {
-      font-size: 160px;
+    
+    #home {
+      min-height: 85vh;/* Set the height to 50% of the viewport height (vh) for mobile devices */
     }
   }
   #home h1 {
