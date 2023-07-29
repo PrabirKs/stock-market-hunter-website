@@ -15,7 +15,7 @@ const typingText = "Learn the art of trading from industry experts.";
     function adjustFontSize() {
         const typingEffectElement = document.getElementById("typing-effect");
         const windowWidth = window.innerWidth;
-        const fontSize = windowWidth <= 767 ? 12 : 24; // Adjust font size based on the window width
+        const fontSize = windowWidth <= 767 ? 14 : 24; // Adjust font size based on the window width
         typingEffectElement.style.fontSize = `${fontSize}px`;
       }
   

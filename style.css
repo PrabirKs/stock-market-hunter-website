@@ -44,6 +44,9 @@
     #home {
       min-height: 85vh;/* Set the height to 50% of the viewport height (vh) for mobile devices */
     }
+    *{
+      margin: 0;
+    }
   }
   #home h1 {
     font-size: 48px;
