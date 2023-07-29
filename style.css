@@ -13,28 +13,79 @@
     
   }
 
-
-
+  #home p {
+    font-size: 24px; /* Increase the font size */
+    color: #333; /* Set a dark color for better visibility on the white background */
+    background-color: rgba(255, 255, 255, 0.7); /* Add a subtle white background color */
+    padding: 10px 20px; /* Add padding to create some space around the text */
+    border-radius: 8px; /* Add rounded corners for a stylish look */
+    max-width: 600px; /* Limit the maximum width to prevent text from becoming too wide */
+    margin: 0 auto; /* Center the paragraph horizontally */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  #typing-effect {
+    font-size: 2px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    white-space: nowrap; /* Prevent text from wrapping to a new line */
+    overflow: hidden; /* Hide the overflowed text */
+    cursor: text; /* Add a text cursor */
+  }
+  @media (max-width: 767px) {
+    /* Apply the font size adjustment for mobile devices */
+    #typing-effect {
+      font-size: 160px;
+    }
+  }
   #home h1 {
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.5; /* Add some line height between h1 and p */
+  }
+  #home h1 span {
+    display: block; /* Split the h1 into two parts */
+    margin-bottom: 10px; /* Add some height between the two parts */
+  }
+ @keyframes glowShakeAnimation {
+    0% {
+      transform: translateX(0);
+      text-shadow: 0 0 5px #3f83e6, 0 0 10px #3f83e6, 0 0 20px #3f83e6;
+    }
+    50% {
+      transform: translateX(-2px);
+      text-shadow: 0 0 5px #3f83e6, 0 0 10px #3f83e6, 0 0 25px #3f83e6;
+    }
+    100% {
+      transform: translateX(0);
+      text-shadow: 0 0 5px #3f83e6, 0 0 10px #3f83e6, 0 0 20px #3f83e6;
+    }
   }
 
-  #home p {
-    font-size: 18px;
-    margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Apply the animation to the "trader" text */
+  #home h1 span {
+    animation: glowShakeAnimation 3s infinite; /* Set the animation duration and make it repeat indefinitely */
   }
 
   #home .btn {
+    margin-top: 20px;
     font-size: 18px;
     padding: 12px 30px;
     border-radius: 30px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
-
+  /* Responsive styles */
+  @media (max-width: 767px) {
+    #home h1 {
+      font-size: 28px; /* Further reduce the font size for smaller screens */
+    }
+   
+  }
 
 
 
@@ -69,8 +120,8 @@
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
     }
     50% {
-      color: #3f83e6; /* Change this to the glowing color you desire */
-      text-shadow: 0 0 10px #3f83e6, 0 0 20px #3f83e6, 0 0 30px #3f83e6;
+      color: #423cf5; /* Change this to the glowing color you desire */
+      text-shadow: 0 0 10px #428eff, 0 0 20px #2472e8, 0 0 30px #90bcff;
     }
     100% {
       color: #fff;
@@ -83,98 +134,312 @@
     transition: background-color 0.3s ease, color 0.3s ease;
     padding: 8px 16px;
     margin: 0px 12px;
+    font-weight: 600;
   }
 
   .navbar-nav .nav-link:hover {
-    color: #3f83e6; /* Change this to the hover background color you desire */
-    background-color: #fff; /* Change this to the hover text color you desire */
+    background-color: #4987e5; /* Change this to the hover text color you desire */
     text-decoration: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    border-radius: 10%;
-  }   /* Custom CSS for the courses section */
-      #courses {
-        background-color: #f2f7fa;
-        color: #333;
-      }
+    border-radius: 0%;
+  }  
   
-      .course-card {
-        border: 1px solid #ccd6dd;
-        border-radius: 10px;
-        padding: 20px;
-        margin-bottom: 20px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        transition: box-shadow 0.3s ease, border-color 0.3s ease;
-        background-color: #fff;
-      }
+  .navbar-nav:hover{
+    color: #3f83e6;
+  }
   
-      .course-card img {
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        border-radius: 50%;
-        margin-bottom: 10px;
-      }
   
-      .course-card h3 {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
   
-      .course-card p {
-        font-size: 16px;
-        margin-bottom: 8px;
-      }
-  
-      .course-card .btn-details {
-        background-color: #3f83e6;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-      }
-  
-      .course-card:hover {
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        border-color: #3f83e6;
-      }
-  
-      .course-card:hover h3 {
-        color: #3f83e6;
-      }
-  
-      .course-card:hover .btn-details {
-        background-color: #0060ef;
-        border: 1px solid black;
-      }
-     
-      
-  /* Custom CSS for the staff details section */
-  #staff {
+   /* Custom CSS for the "Courses and Subscription Fees" section */
+   #courses {
+    background-color: #f5f5f5; /* Set background color to light grey */
     padding: 80px 0;
-    background-color: #f8f9fa;
   }
 
-  .staff-card {
-    border: 1px solid #ddd;
-    border-radius: 5px;
+  #courses h2 {
+    color: #3f83e6; /* Set text color to blue */
+    font-weight: bold; /* Make the text bold */
+    font-size: 36px; /* Increase the text size */
+    margin-bottom: 30px;
+  }
+
+  .course-card {
+    background-color: #fff; /* Set background color to white */
+    border-radius: 10px;
     padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
     text-align: center;
-    margin-bottom: 20px;
+    transition: transform 0.3s; /* Add a smooth transition effect on hover */
   }
 
-  .staff-card img {
-    width: 100px;
-    height: 100px;
+  .course-card img {
+    width: 100%;
+    height: 200px;
     object-fit: cover;
-    border-radius: 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .course-card h3 {
+    color: #3f83e6; /* Set course name text color to blue */
+    font-size: 24px; /* Increase the course name text size */
+    margin-bottom: 15px;
+  }
+
+  .course-card p {
+    color: #444; /* Set course details text color to dark grey */
+    font-size: 16px; /* Increase the course details text size */
     margin-bottom: 10px;
   }
 
-  /* Set a specific height for the staff name and description to maintain consistent card heights */
-  .staff-card h3 {
-    min-height: 50px;
+  .course-card .course-discount {
+    background-color: #f55555; /* Set discount background color to red */
+    color: #fff; /* Set discount text color to white */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
   }
 
- 
+  .course-card .mentor-name {
+    font-size: 16px;
+    color: #777; /* Set mentor name text color to grey */
+  }
+
+  .course-card .btn-buy {
+    background-color: #3f83e6; /* Set button background color to blue */
+    color: #fff; /* Set button text color to white */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add a smooth transition effect on hover */
+  }
+
+  .course-card .btn-buy:hover {
+    background-color: #3671c0; /* Darken the button color on hover */
+  }
+
+  /* Add a subtle 3D effect on hover */
+  .course-card:hover {
+    transform:translateY(-5px); 
+  }
+
+      
+  /* Custom CSS for the staff details section */
+  #staff {
+    background-color: #f2f7fa;
+    padding: 80px 0;
+  }
+
+  .staff-card {
+    background-color: #3f83e6;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+
+  .staff-card img {
+    width: 160px;
+    height: 160px;
+    object-fit:cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-bottom: 10px;
+    
+  }
+
+  .staff-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .staff-card p {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .staff-card .achievements {
+    font-size: 14px;
+  }
+
+  .staff-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  #staff{
+    background-color: #3678db;
+  }
+  .staff-name{
+    font-weight: bold;
+  }
+  /* Styling for Meet Our Team heading */
+  .meet-our-team-heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff; /* Set text color to white */
+    animation: fadeIn 1s ease; /* Fade-in animation on page load */
+  }
+
+  /* Keyframes for fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  /* contact us page design */
+  /* Custom CSS for the "Contact Us" section */
+  /* Custom CSS for the "Contact Us" section */
+  #contact {
+    background-color: #f5f5f5; /* Set background color to light grey */
+    padding: 50px 0;
+    width: 100%;
+
+  }
+  
+  #contact h2 {
+    color: #3f83e6; /* Set text color to blue */
+    font-weight: bold; /* Make the text bold */
+    font-size: 36px; /* Increase the text size */
+    margin-bottom: 30px;
+  }
+
+  .contact-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Wrap the content when the screen is narrow */
+    align-items: stretch; /* Ensure both sections have equal height */
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .contact-image {
+    flex: 2; /* Occupy one-third of the container width */
+    
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 20px 0px 0px 20px; /* Add rounded borders */
+    position: relative;
+    width: 200px;
+  }
+
+  .contact-image img {
+    width: 800px;
+    height: auto;
+    max-width: 100%; /* Ensure the image doesn't exceed its original size */
+  }
+
+
+  .contact-form {
+    flex: 1; /* Occupy two-thirds of the container width */
+    padding: 30px;
+    background-color: #fff; /* Set form background color to white */
+    border-radius: 0px 20px 20px 0px ; /* Add rounded borders */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Add circular border */
+    margin-bottom: 20px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Add smooth transition effects */
+  }
+
+  .form-input:focus {
+    border-color: #3f83e6; /* Change border color on focus */
+    box-shadow: 0 0 5px #3f83e6; /* Add shadow effect on focus */
+  }
+
+  .form-input::placeholder {
+    color: #888; /* Set placeholder text color to grey */
+  }
+
+  .form-btn {
+    background-color: #3f83e6; /* Set button background color to blue */
+    color: #fff; /* Set button text color to white */
+    border: none;
+    padding: 15px 30px;
+    border-radius: 20px; /* Add circular border */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add a smooth transition effect on hover */
+  }
+
+  .form-btn:hover {
+    background-color: #3671c0; /* Darken the button color on hover */
+  }
+
+  /* Other styles remain unchanged */
+
+  @media screen and (max-width: 768px) {
+    /* Adjust styles for phone devices */
+    .contact-wrapper {
+      flex-direction: column; /* Stack sections vertically */
+      align-items: center; /* Center items vertically */
+    }
+    .contact-image{
+      width: 100%;
+    }
+    .contact-image,
+    .contact-form {
+      flex: 1; /* Occupy full width of the container */
+      margin: 10px; /* Add some space between sections */
+      border-radius: 20px 20px 20px 20px ;
+    }
+  }
+
+   /* Custom CSS for the "About Us" section */
+   #about {
+    background-color: #3678db; /* Set background color to #3678db */
+    padding: 80px 0;
+    text-align: center;
+  }
+
+  #about h2 {
+    color: #fff; /* Set text color to white */
+    font-weight: bold; /* Make the text bold */
+    margin-bottom: 20px;
+    font-family: "Times New Roman", serif; /* Apply classic font-family */
+  }
+
+  #about p {
+    color: #fff; /* Set text color to white */
+    max-width: 1000px; /* Increase the max width to fit the window */
+    margin: 0 auto 20px; /* Center the paragraph and add a bottom margin */
+    line-height: 1.8; /* Add some line spacing for better readability */
+    font-size: 18px; /* Increase the text size */
+    font-family: "Times New Roman", serif; /* Apply classic font-family */
+  }
+
+  #about .white-paragraph {
+    display: none; /* Hide the white paragraph initially */
+  }
+
+  /* Hover animation for "About Us" section */
+  #about:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Add a glowing effect on hover */
+  }
+
+  /* Trading arrow animation on hover */
+  #about:hover .trading-arrow {
+    animation: tradingArrow 1s infinite alternate; /* Trading arrow animation on hover */
+  }
+
+  /* Keyframes for the trading arrow animation */
+  @keyframes tradingArrow {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-10px);
+    }
+  }

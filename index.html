@@ -11,7 +11,7 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg custom-navbar-color">
+    <nav class="navbar navbar-expand-lg navbar-dark  custom-navbar-color">
       <a class="navbar-brand" href="#home">Stock Market Hunter</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -29,91 +29,124 @@
   </header>
 
   <main>
+    
     <section id="home" class="bg-light text-center py-5">
       <div class="container">
-        <h1> Your Gateway to Becoming a Confident and Skilled Trader</h1>
-        <p>Learn the art of trading from industry experts.</p>
+        <h1> <span>Your Gateway to Becoming a Confident</span> <span>and Skilled Trader</h1>
+
+          <div id="typing-effect"></div>
+
         <a href="#courses" class="btn btn-primary">Explore Courses</a>
       </div>
     </section>
-    <section id="courses" class="py-5">
-      <div class="container">
-        <h2 class="text-center">Courses and Subscription Fees</h2>
+
+      <!-- Staff details section -->
+    <section id="staff">
+      <div class="container staff-details">
+        <h2 class="text-center mb-5 meet-our-team-heading">Meet Our Team</h2>
         <div class="row">
-          <div class="col-md-4">
-            <div class="course-card text-center">
-              <img src="course1.jpg" alt="Course 1">
-              <h3>Course 1 Name</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula vitae.</p>
-              <p>Course Fee: $99</p>
-              <p>Teacher: John Doe</p>
-              <button class="btn-details">Details</button>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="staff-card">
+              <img src="profile.jpeg" alt="Staff 1">
+              <h3>CEO</h3>
+              <p class="staff-name">Mr. Satyabrata Sahoo</p>
+              <p class="achievements">Our CEO has achieved a remarkable 300% ROI during volatile market conditions, earning the "Trading Innovator of the Year" award.</p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="course-card text-center">
-              <img src="course2.jpg" alt="Course 2">
-              <h3>Course 2 Name</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula vitae.</p>
-              <p>Course Fee: $149</p>
-              <p>Teacher: Jane Smith</p>
-              <button class="btn-details">Details</button>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="staff-card">
+              <img src="profile.jpeg" alt="Staff 2">
+              <h3>Chairman</h3>
+              <p class="staff-name">Mr. Prabir Sahoo</p>
+              <p class="achievements">Meet our influential chairman, forging strategic partnerships, and promoting financial literacy for responsible investing.        </p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="course-card text-center">
-              <img src="course3.jpg" alt="Course 3">
-              <h3>Course 3 Name</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula vitae.</p>
-              <p>Course Fee: $199</p>
-              <p>Teacher: Mike Johnson</p>
-              <button class="btn-details">Details</button>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="staff-card">
+              <img src="profile.jpeg" alt="Staff 3">
+              <h3>Manager</h3>
+              <p class="staff-name">Mr. Biranchi narayan</p>
+              <p class="achievements">The expertise of our manager in risk management ensures minimal drawdowns, guiding traders towards consistent profits.</p>
             </div>
           </div>
-          
         </div>
       </div>
     </section>
 
-    <!-- Staff details section -->
-    <section id="staff">
+
+    <!-- Courses and Subscription Fees section -->
+    <section id="courses" class="py-5">
+      <div class="container">
+        <h2 class="text-center">Courses and Subscription Fees</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="course-card">
+              <img src="course1.jpg" alt="Course 1 Image">
+              <h3>Stock Market Mastery</h3>
+              <p>Learn advanced stock trading strategies to maximize profits in volatile markets.</p>
+              <p>Duration: 6 weeks</p>
+              <p>Price: $299 <span class="course-discount">25% OFF</span></p>
+              <p class="mentor-name">Mentor: John Smith</p>
+              <button class="btn-buy">Buy Now</button>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="course-card">
+              <img src="course2.jpg" alt="Course 2 Image">
+              <h3>Options Trading Made Easy</h3>
+              <p>Master the art of options trading and leverage market opportunities.</p>
+              <p>Duration: 4 weeks</p>
+              <p>Price: $199 <span class="course-discount">20% OFF</span></p>
+              <p class="mentor-name">Mentor: Jane Doe</p>
+              <button class="btn-buy">Buy Now</button>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="course-card">
+              <img src="course3.jpg" alt="Course 3 Image">
+              <h3>Cryptocurrency Investing</h3>
+              <p>Explore the world of digital assets and make informed cryptocurrency investments.</p>
+              <p>Duration: 3 weeks</p>
+              <p>Price: $149</p>
+              <p class="mentor-name">Mentor: Mike Johnson</p>
+              <button class="btn-buy">Buy Now</button>
+            </div>
+          </div>
+          <!-- Add Course 4 here -->
+        </div>
+      </div>
+    </section>
+
+   <!-- About Us section -->
+   <section id="about" class="py-5">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>At Stock Market Hunter, we are a team of expert traders with years of experience in the financial markets. We have a proven track record of success, and we are committed to helping our clients achieve their financial goals through smart, strategic trading. With our in-depth knowledge of the markets and our commitment to excellence, we are the trading partner you can trust.</p>
+      <p class="white-paragraph">Our mission is to provide the best trading education and support to our clients. Join us on this exciting journey to financial success!</p>
+      <div class="trading-arrow">➤</div> <!-- Trading arrow element for the animation -->
+    </div>
+  </section>
+      <!-- Contact Us section -->
+      <section id="contact" class="py-5">
         <div class="container">
-          <h2 class="text-center mb-5">Our Staff</h2>
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="staff-card">
-                <img src="staff1.jpg" alt="Staff 1">
-                <h3>Staff 1 Name</h3>
-                <p>Brief description of Staff 1.</p>
-              </div>
+          <h2 class="text-center">Contact Us</h2>
+          <div class="contact-wrapper">
+            <!-- Contact Image -->
+            <div class="contact-image">
+              <img src="contact_image.jpg" alt="Contact Image">
             </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="staff-card">
-                <img src="staff2.jpg" alt="Staff 2">
-                <h3>Staff 2 Name</h3>
-                <p>Brief description of Staff 2.</p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="staff-card">
-                <img src="staff3.jpg" alt="Staff 3">
-                <h3>Staff 3 Name</h3>
-                <p>Brief description of Staff 3.</p>
-              </div>
+  
+            <!-- Contact Form -->
+            <div class="contact-form">
+              <input type="text" class="form-input" placeholder="Your Name" required>
+              <input type="email" class="form-input" placeholder="Your Email" required>
+              <textarea class="form-input" placeholder="Your Message" rows="5" required></textarea>
+              <button class="form-btn">Send Message</button>
             </div>
           </div>
         </div>
       </section>
   
-
-    <section id="about" class="py-5">
-      <div class="container">
-        <h2>About Us</h2>
-        <p>Write a brief description of your trading academy and your team.</p>
-      </div>
-    </section>
-  </main>
-
   <footer class="bg-dark text-white py-3 text-center">
     <div class="container">
       <div class="social-links">
@@ -122,10 +155,11 @@
         <a href="#" target="_blank" class="social-icon">LinkedIn</a>
         <!-- Add more social links as needed -->
       </div>
-      <p>&copy; 2023 Your Trading Academy. All rights reserved.</p>
+      <p>&copy; 2023 Stock Market Hunter. All rights reserved.</p>
     </div>
   </footer>
 
+  <script src="app.js"></script>
   <!-- Bootstrap and jQuery JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
