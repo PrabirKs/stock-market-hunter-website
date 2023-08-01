@@ -127,8 +127,8 @@
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
     }
     50% {
-      color: #423cf5; /* Change this to the glowing color you desire */
-      text-shadow: 0 0 10px #428eff, 0 0 20px #2472e8, 0 0 30px #90bcff;
+      color: #49d8ff; /* Change this to the glowing color you desire */
+      text-shadow: 0 0 10px #42e3ff, 0 0 20px #5fdbfd, 0 0 30px #90bcff;
     }
     100% {
       color: #fff;
@@ -343,7 +343,7 @@
   }
 
 
-  .contact-form {
+  .contact-form-container {
     flex: 1; /* Occupy two-thirds of the container width */
     padding: 30px;
     background-color: #fff; /* Set form background color to white */
@@ -397,7 +397,7 @@
       width: 100%;
     }
     .contact-image,
-    .contact-form {
+    .contact-form-container {
       flex: 1; /* Occupy full width of the container */
       margin: 10px; /* Add some space between sections */
       border-radius: 20px 20px 20px 20px ;

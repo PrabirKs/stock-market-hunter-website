@@ -24,3 +24,34 @@ const typingText = "Learn the art of trading from industry experts.";
   
       // Add event listener to resize the text when the window is resized
       window.addEventListener('resize', adjustFontSize);
+
+
+       // JavaScript to handle form submission
+  const contactForm = document.getElementById("contact-form");
+
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // Create a new FormData object to store the form data
+    const formData = new FormData(contactForm);
+
+    // Send a POST request to the server-side script using Fetch API
+    fetch("send_email.php",
+     {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.text())
+      .then((data) => {
+        if (data === "success") {
+          alert("Message sent successfully!");
+          contactForm.reset();
+        } else {
+        //   alert("Failed to send message. Please try again later.");
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("An error occurred. Please try again later.");
+      });
+  });

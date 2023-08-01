@@ -49,23 +49,23 @@
             <div class="staff-card">
               <img src="profile.jpeg" alt="Staff 1">
               <h3>CEO</h3>
-              <p class="staff-name">Mr. Satyabrata Sahoo</p>
+              <p class="staff-name">Mr. Amlan Samantray</p>
               <p class="achievements">Our CEO has achieved a remarkable 300% ROI during volatile market conditions, earning the "Trading Innovator of the Year" award.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="staff-card">
-              <img src="profile.jpeg" alt="Staff 2">
+              <img src="satya.jpeg" alt="Staff 2">
               <h3>Chairman</h3>
-              <p class="staff-name">Mr. Prabir Sahoo</p>
+              <p class="staff-name">Mr. Satyabrata Sahoo </p>
               <p class="achievements">Meet our influential chairman, forging strategic partnerships, and promoting financial literacy for responsible investing.        </p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="staff-card">
-              <img src="profile.jpeg" alt="Staff 3">
+              <img src="biranchi.png" alt="Staff 3">
               <h3>Manager</h3>
-              <p class="staff-name">Mr. Biranchi narayan</p>
+              <p class="staff-name">MP DibyaJyoti</p>
               <p class="achievements">The expertise of our manager in risk management ensures minimal drawdowns, guiding traders towards consistent profits.</p>
             </div>
           </div>
@@ -137,11 +137,13 @@
             </div>
   
             <!-- Contact Form -->
-            <div class="contact-form">
-              <input type="text" class="form-input" placeholder="Your Name" required>
-              <input type="email" class="form-input" placeholder="Your Email" required>
-              <textarea class="form-input" placeholder="Your Message" rows="5" required></textarea>
-              <button class="form-btn">Send Message</button>
+            <div class="contact-form-container">
+              <form id="contact-form" method="post" action="send_email.php">
+                <input type="text" class="form-input" name="name" placeholder="Your Name" required>
+                <input type="email" class="form-input" name="email" placeholder="Your Email" required>
+                <textarea class="form-input" name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="form-btn">Send Message</button>
+              </form>
             </div>
           </div>
         </div>
